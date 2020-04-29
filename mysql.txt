@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS `personal` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL
+)
+ 
+CREATE TABLE IF NOT EXISTS `tipo_usuario` (
+  `id` int(11) NOT NULL,
+  `tipo` varchar(50) NOT NULL
+)
+ 
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL,
+  `usuario` varchar(30) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `id_personal` int(11) NOT NULL,
+  `id_tipo` int(11) NOT NULL
+)
